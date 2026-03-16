@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="theme-color" content="#f59e0b" />
+    <meta name="description" content="Generate authentic 6-scene Myanmar palace tales in the style of U Paw Oo" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Myanmar Story" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Myanmar Story Script Generator</title>
+    <script type="module" crossorigin src="/assets/index-jdbT2kAo.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-NKS3VPBl.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {
+            console.log('Service Worker registration failed');
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

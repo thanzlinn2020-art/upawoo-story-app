@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Myanmar Story Script Generator</title>
+    <meta name="description" content="Generate authentic 6-scene Myanmar palace tales in the style of U Paw Oo" />
+    <script>
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // This script takes the current URL and converts the path and query
+      // string into just a query string, and then redirects the browser
+      // to the new URL with only a query string and hash fragment,
+      // e.g. https://www.foo.tld/one/two?a=b&c=d#qwe
+      //      becomes
+      //      https://www.foo.tld/?/one/two&a=b~and~c=d#qwe
+      //
+      // The index.html file must have a script that converts the query string
+      // back into the correct URL before the single-page app is loaded.
+      // See: https://github.com/rafgraph/spa-github-pages
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1).join('/') + '/?/' +
+        l.pathname.slice(1).replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
